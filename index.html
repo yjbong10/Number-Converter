@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;800&display=option" rel="stylesheet">
+    <title>Number Converter | Number to Romam</title>
+</head>
+<body>
+    <section id="container">
+            <div class="title">
+                <h1 class="Htitle"><Span class="primary-text">N</Span>umber Converte<Span class="primary-text">R</Span></h1>
+                <p>Input any number and press convert</p>
+            </div>
+            <div class="input-area">
+                <p class="error d-none">*Input any number first.</p>
+                <input type="number" maxlength="4" max="4" name="input-area" id="input-area" class="input-field" placeholder="Enter Number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </div>
+
+            <div class="submit-btn">
+                <input type="button" value="Convert" id="btn" class="btn" onclick="resultOutput()">
+            </div>
+
+            <div class="result d-none">
+                <p class="result-title">Roman numeral:</p>
+                <h3></h3>
+                <div class="output"></div>    
+                <a href="#" onclick="closeResultOutput()"><i class="far fa-times-circle close-icon"></i></a>
+            </div>
+
+    </section>
+    <script src="./script/main.js" type="text/javascript"></script>
+</body>
+</html>
